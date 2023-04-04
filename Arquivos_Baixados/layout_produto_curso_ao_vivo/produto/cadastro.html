@@ -1,0 +1,155 @@
+<!doctype html>
+<html language="pt-br">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<thead>			
+		<title>mjailton</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="js/datatables/css/jquery.dataTables.min.css">
+		<link rel="stylesheet" href="js/datatables/css/responsive.dataTables.min.css">
+		<link rel="stylesheet" href="js/datatables/css/style_dataTable.css">
+		<link rel="stylesheet" href="css/auxiliar.css">
+		<link rel="stylesheet" href="css/grade.css">
+		<link rel="stylesheet" href="css/style.css">
+	</thead>
+	<body>
+		
+		<div class="conteudo">
+		
+		<section class="rows">
+		<nav class="menu col-2">		
+				<a href="index.html" class="logo"><img src="img/logo.png"></a>
+			<ul>
+				<li><a href="index.html"><i class="ico home"></i>Home</a></li>
+				<li><a href="cadastro.html"><i class="ico cad"></i>Cadastro</a></li>
+				<li><a href="lista.html"><i class="ico lista"></i>Lista	</a></li>
+				<li><a href=""><i class="ico sair"></i>Sair</a></li>
+			</ul>
+		</nav>
+			<section class="col-10">			
+				<header class="topo">
+					<div class="conteudo">
+						<a href="" class="mobmenu"></a>
+						<div class="menu">
+							<ul>
+								<li><a href=""><i class="fas fa-user-alt"></i> Usuário</a></li>
+							</ul>
+						</div>
+					</div>
+				</header>
+				<div class="base-form base-home">
+					<div class="caixa-form  mb-3">
+						<div class="thead"><i class="ico cad"></i> Inserir novo cadastro</div>
+						<form action="" method="POST">
+								<div style="display:none">
+									<span class="msg sucesso"><i class="fas fa-check"></i> Mensagem de sucesso <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></span>
+									<span class="msg erro"><i class="fas fa-exclamation-triangle"></i> Mensagem de erro <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></span>	
+								</div>						
+							<div class="rows">
+							  <div class="col-3 position-relative">									
+									<img src="img/img-usuario.png" class="img-fluido foto">
+									<div  class="foto-file">
+										<input type="file" id="editarFoto"><label for="editarFoto"><span>Editar foto</span></label>
+									</div>
+									<small class="d-block text-center pt-1 pb-2">nome_do_arquivo.jpg</small>
+								</div>
+								
+								<div class="col-9">
+								<div class="rows">
+									<div class="col-12">
+										<label>Nome</label>
+										<input name="cliente" value="" type="text" placeholder="Insira um nome" class="form-campo">
+									</div>
+									<div class="col-4">
+										<label>Cep</label>
+										<input name="cep" value="" type="text" placeholder="Insira seu CEP" class="form-campo">
+									</div>
+									
+									<div class="col-8">				
+										<label>Endereço</label>
+										<input name="endereco" value="" type="text" placeholder="Insira seu endereço" class="form-campo">
+									</div>
+								</div>
+								</div>
+								<div class="col-4">
+									<label>Complemento</label>
+									<input name="complemento" value="" type="text" placeholder="Insira um Número" class="form-campo">	
+								</div>			
+								<div class="col-2">
+									<label>Número</label>
+									<input name="numero" value="" type="text" placeholder="Insira um Número" class="form-campo">	
+								</div>									
+								<div class="col-6">
+									<label>Bairro</label>
+									<input name="bairro" value="" type="text" placeholder="Insira seu bairro" class="form-campo">
+								</div>
+								<div class="col-4">
+									<label>Cidade</label>
+									<input name="cidade" value="" type="text" placeholder="Insira sua cidade" class="form-campo">	
+								</div>	
+							
+								<div class="col-4">
+									<label>UF</label>
+									<select name="id_estado" class="form-campo">
+										<option value=''>Maranhão</option>
+											
+									
+									</select>						
+								</div>								
+													
+								<div class="col-4">
+									<label>Celular</label>
+									<input name="celular" value="" type="text" placeholder="Insira seu celular" class="form-campo">
+								</div>
+								<div class="col-4">
+									<label>CPF</label>
+									<input name="cpf" value="" type="text" placeholder="Insira seu CPF" class="form-campo">
+								</div>
+								<div class="col-4">
+									<label>Sexo</label>
+									<select class="form-campo" name="sexo">
+										<option>Masculino</option>
+										<option>Feminino</option>
+									</select>
+								</div>
+								<div class="col-4">
+									<label>Data de cadastro</label>
+									<input name="data_cadastro" value="" type="date" placeholder="Insira sua data" class="form-campo">
+								</div>
+							
+							
+								<div class="col-6">
+									<label>Email</label>
+									<input name="email" value="" type="text" placeholder="Insira um email" class="form-campo">
+								</div>
+								<div class="col-6">
+									<label>Site</label>
+									<input name="site" value="" type="text" placeholder="Insira seu Site" class="form-campo">
+								</div>
+								<div class="col-12">
+									<label>Observação</label>
+									<textarea rows="10" name="observacao" class="form-campo"></textarea>
+								</div>
+								<input type="hidden" name="id_cliente" value="" />
+								<input type="submit" value="Cadastrar" class="btn">
+						</form>
+					</div>
+				</div>
+				</div>
+				</section>
+				</section>
+				</div>
+		
+		<footer class="rodape">
+			<p>CopyRight - 2020</p>
+		</footer>
+		
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/9480317a2f.js"></script>
+		<script src="js/js.js"></script>
+		<script src="js/datatables/js/dataTables.responsive.min.js"></script>
+		<script src="js/datatables/js/jquery.dataTables.min.js"></script>
+		<script src="js/componentes/js_data_table.js"></script>
+	</body>
+</html>

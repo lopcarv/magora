@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+body{
+	padding:3rem 20rem;
+    font-family: 'Roboto', sans-serif;
+    font-size:1rem;
+	background: #8888a7;
+}
+h1{
+	color:#fff;text-transform:uppercase;font-size:1.8rem
+}
+fieldset.alt{
+	padding:.8rem 0rem;
+}
+fieldset.alt legend{	
+	position: initial;
+    padding:0 .5rem;
+	font-size:1.2rem;	
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+}
+fieldset{
+	border-radius:8px;
+	border:solid 1px #ccc;
+	padding:2rem 2rem;
+	background:#fff;
+}
+fieldset legend{
+	text-align:left;
+	text-transform:uppercase;
+	padding:0;
+	font-size:1.5rem;
+	font-weight:500;
+	position: relative;
+    top: 25px;
+	margin-bottom:1rem;
+}
+fieldset form{
+	display:flex;
+	flex-wrap: wrap;
+	padding:0 -8px;
+}
+fieldset form label{
+	max-width:100%;
+	display:block;
+	flex:0 0 100%;
+	margin-bottom:.6rem;
+	padding:0 8px;
+}
+.col-8{	
+	max-width:66.666%;
+	flex:0 0 66.666%;
+}
+.col-4{	
+	max-width:33.3333%;
+	flex:0 0 33.3333%;
+}
+.col-6{	
+	max-width:50%;
+	flex:0 0 50%;
+}
+.col{	
+	 -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.col-12{
+	position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+fieldset form label small{
+	display:block;padding-bottom:5px
+}
+fieldset form input,
+fieldset form select
+{
+	display:block;
+	border:solid 1px #ddd;
+	padding:.8rem;
+	width:100%;
+	border-radius:5px;
+}
+fieldset form input[type=submit]{
+	display:table;
+	margin:10px auto;
+	width:auto;
+	text-transform:uppercase;
+	font-size:1.1rem;
+	background: #4ba6d0;
+	color:#fff;
+	border:0;
+}
+.rows{
+	display: -ms-flexbox;
+    display: flex; /*deixa todo conteudo do pai flexivel*/
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	margin-right: -15px;
+    margin-left:  -15px;
+}
+
+.btn{
+	display: inline-block;
+    border: solid 1px #2196F3;
+    border-radius: 5px;
+    padding: .5rem;
+    color: #2196F3;
+    text-decoration: none;
+	position:relative;
+	text-transform:uppercase
+}
+.float-right{float:right}
+.p2{
+	padding:1rem!important
+}
+.p1{
+	padding:.8rem!important
+}
+.centralizar{
+	text-align:center;
+	display:block;
+	margin:0 auto
+}
+
+.home {
+	padding:.8rem
+}
+.home .btn{
+	width:100%;text-align:center;
+	padding:2rem 1rem
+}
+.home p{
+	border-bottom:solid 1px #ddd;
+	padding-bottom:.4rem;
+	color:#444;
+}
+.home i{
+	display:block;
+	font-size:4rem;
+	margin-bottom:1rem
+}
+
+h5{
+	text-align:center;
+	font-weight:300;
+	font-size:1.1rem
+}
+h4{
+	text-align:left;
+	font-weight:3400;
+	font-size:1.3rem;
+	padding-bottom:.4rem;
+	text-transform:uppercase;
+}
+
+table{
+	border:solid 1px #ddd;
+}
+table thead th{
+	border-bottom:solid 1px #ddd;
+	padding:.4rem
+}
+table tbody td{
+	border-bottom:solid 1px #ddd;
+	padding:.4rem;
+	font-size:.9rem;
+}
+table tbody td .btn{
+	font-size:.79rem;
+}

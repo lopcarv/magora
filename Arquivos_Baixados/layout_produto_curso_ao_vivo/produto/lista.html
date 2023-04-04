@@ -1,0 +1,189 @@
+<!doctype html>
+<html language="pt-br">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<thead>
+		<title>mjailton</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="js/datatables/css/jquery.dataTables.min.css">
+		<link rel="stylesheet" href="js/datatables/css/responsive.dataTables.min.css">
+		<link rel="stylesheet" href="js/datatables/css/style_dataTable.css">
+		<link rel="stylesheet" href="css/auxiliar.css">
+		<link rel="stylesheet" href="css/grade.css">
+		<link rel="stylesheet" href="css/style.css">
+	</thead>
+	<body>
+		<div class="conteudo">
+		
+		<section class="rows">
+		<nav class="menu col-2">		
+				<a href="index.html" class="logo"><img src="img/logo.png"></a>
+			<ul>
+				<li><a href="index.html"><i class="ico home"></i>Home</a></li>
+				<li><a href="cadastro.html"><i class="ico cad"></i>Cadastro</a></li>
+				<li><a href="lista.html"><i class="ico lista"></i>Lista	</a></li>
+				<li><a href=""><i class="ico sair"></i>Sair</a></li>
+			</ul>
+		</nav>
+			<section class="col-10">			
+				<header class="topo">
+					<div class="conteudo">
+						<a href="" class="mobmenu"></a>
+						<div class="menu">
+							<ul>
+								<li><a href=""><i class="fas fa-user-alt"></i> Usuário</a></li>
+							</ul>
+						</div>
+					</div>
+				</header>
+				<div class=" base-home">
+				<div class="caixa mb-3">
+				<div class="thead"><i class="ico lista"></i> Lista de contatos</div>
+				<div class="base-lista pb-3">
+					<div class="px-2">
+						<div class="text-end d-flex">
+							<a href="cadastro.html" class="btn d-inline-block mb-2 mx-1"><i class="fas fa fa-plus-circle" aria-hidden="true"></i> Cadastrar novo</a>
+							<a href="" class="btn btn-roxo d-inline-block mb-2 filtro"><i class="fas fa fa-filter" aria-hidden="true"></i> Filtrar</a>
+						</div>
+					
+					<div class="lst mostraFiltro">
+						<form action="" method="">
+						<div class="rows">
+								<div class="col-4">
+									<select name="txt_id_empresa">
+										<option selected>Selecione o valor...</option>
+										<option value="1">Código</option>
+										<option value="2">Nome</option>
+										<option value="3">Email</option>
+										<option value="4">Cidade</option>
+										<option value="5">Site</option>
+										<option value="6">Fone</option>
+									</select>
+								</div>
+								<div class="col-6">
+									<input type="text"  name="" placeholder="Valor da pesquisar..." >
+								</div>
+								<div class="col-2">
+									<input type="submit" class="btn" value="Buscar">
+								</div>
+						</div>
+						</form>
+					</div>
+					</div>
+						
+				<div class="tabela-responsiva">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" id="dataTable">
+						<thead> 
+						  <tr>
+							<th align="left">Nome</th>
+							<th align="left">Email</th>
+							<th align="center">Telefone</th>
+							<th align="center">Ação</th>
+						  </tr>
+						</thead> 
+						<tbody>
+							<tr>
+								<td>Manoel Jailton Nascimento</td>
+								<td>mjailton@gmail.com</td>
+								<td align="center">9899924667</td>
+								<td align="center">
+									<a href="formulario.html" class="btn btn-verde">Editar</a>
+									<a href="formulario.html" class="btn btn-vermelho">Excluir</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Manoel Jailton Nascimento</td>
+								<td>mjailton@gmail.com</td>
+								<td align="center">9899924667</td>
+								<td align="center">
+									<a href="formulario.html" class="btn btn-verde">Editar</a>
+									<a href="formulario.html" class="btn btn-vermelho">Excluir</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Manoel Jailton Nascimento</td>
+								<td>mjailton@gmail.com</td>
+								<td align="center">9899924667</td>
+								<td align="center">
+									<a href="formulario.html" class="btn btn-verde">Editar</a>
+									<a href="formulario.html" class="btn btn-vermelho">Excluir</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Manoel Jailton Nascimento</td>
+								<td>mjailton@gmail.com</td>
+								<td align="center">9899924667</td>
+								<td align="center">
+									<a href="formulario.html" class="btn btn-verde">Editar</a>
+									<a href="formulario.html" class="btn btn-vermelho">Excluir</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Manoel Jailton Nascimento</td>
+								<td>mjailton@gmail.com</td>
+								<td align="center">9899924667</td>
+								<td align="center">
+									<a href="formulario.html" class="btn btn-verde">Editar</a>
+									<a href="formulario.html" class="btn btn-vermelho">Excluir</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Manoel Jailton Nascimento</td>
+								<td>mjailton@gmail.com</td>
+								<td align="center">9899924667</td>
+								<td align="center">
+									<a href="formulario.html" class="btn btn-verde">Editar</a>
+									<a href="formulario.html" class="btn btn-vermelho">Excluir</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Manoel Jailton Nascimento</td>
+								<td>mjailton@gmail.com</td>
+								<td align="center">9899924667</td>
+								<td align="center">
+									<a href="formulario.html" class="btn btn-verde">Editar</a>
+									<a href="formulario.html" class="btn btn-vermelho">Excluir</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Manoel Jailton Nascimento</td>
+								<td>mjailton@gmail.com</td>
+								<td align="center">9899924667</td>
+								<td align="center">
+									<a href="formulario.html" class="btn btn-verde">Editar</a>
+									<a href="formulario.html" class="btn btn-vermelho">Excluir</a>
+								</td>
+							</tr>							
+						</tbody>
+						<tfoot> 
+						  <tr>
+							<th align="left">Nome</th>
+							<th align="left">Email</th>
+							<th align="center">Telefone</th>
+							<th align="center">Ação</th>
+						  </tr>
+						</tfoot> 
+					</table>
+					</div>
+										
+					<p class="nao-encontrado">Nenhum registro encontrado</p>
+					
+					</div>
+					</div>
+					</div>
+				
+			</section>
+		</section>
+		</div>
+		<footer class="rodape">
+			<p>CopyRight - 2020</p>
+		</footer>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/9480317a2f.js"></script>
+		<script src="js/js.js"></script>
+		<script src="js/datatables/js/dataTables.responsive.min.js"></script>
+		<script src="js/datatables/js/jquery.dataTables.min.js"></script>
+		<script src="js/componentes/js_data_table.js"></script>
+	</body>
+</html>
